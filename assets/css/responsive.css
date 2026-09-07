@@ -1,0 +1,200 @@
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .container {
+        width: min(
+            var(--container-width),
+            calc(100% - 50px)
+        );
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .home-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-buttons,
+    .home-social {
+        justify-content: center;
+    }
+
+    .home-visual {
+        min-height: 470px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+
+    /* Navbar */
+
+    .navbar-container {
+        min-height: 70px;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        display: none;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 5px;
+
+        background: var(--white);
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px 5px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* Home */
+
+    .home-section {
+        min-height: auto;
+
+        padding-top: 120px;
+        padding-bottom: 70px;
+    }
+
+    .home-title {
+        font-size: clamp(44px, 13vw, 62px);
+        letter-spacing: -2px;
+    }
+
+    .home-role {
+        font-size: 19px;
+    }
+
+    .home-description {
+        font-size: 15px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home-buttons .btn {
+        width: 100%;
+    }
+
+    .home-visual {
+        min-height: 420px;
+    }
+
+    .profile-wrapper {
+        width: 300px;
+        height: 370px;
+    }
+
+    .profile-image {
+        width: 270px;
+        height: 335px;
+    }
+
+    .home-card {
+        right: 5px;
+        bottom: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home-title {
+        font-size: 42px;
+    }
+
+    .home-role {
+        font-size: 17px;
+    }
+
+    .home-social {
+        flex-wrap: wrap;
+    }
+
+    .home-visual {
+        min-height: 380px;
+    }
+
+    .profile-wrapper {
+        width: 270px;
+        height: 335px;
+    }
+
+    .profile-image {
+        width: 245px;
+        height: 305px;
+    }
+
+}

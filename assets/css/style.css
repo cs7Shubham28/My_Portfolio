@@ -1,0 +1,294 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: var(--body-font);
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   DESIGN VARIABLES
+========================================================= */
+
+:root {
+
+    /* ---------- Colors ---------- */
+
+    --primary: #2e7d32;
+    --primary-dark: #1b5e20;
+    --primary-light: #eaf5eb;
+
+    --dark: #171917;
+    --dark-soft: #252925;
+
+    --text: #333733;
+    --text-light: #6b716c;
+
+    --white: #ffffff;
+    --background: #ffffff;
+    --background-soft: #f7f9f7;
+
+    --border: #e2e7e2;
+
+    --success: #2e7d32;
+    --danger: #c62828;
+
+
+    /* ---------- Fonts ---------- */
+
+    --heading-font: "Manrope", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+
+    /* ---------- Layout ---------- */
+
+    --container-width: 1180px;
+
+
+    /* ---------- Effects ---------- */
+
+    --transition: 0.3s ease;
+
+    --shadow-sm:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+
+    --shadow-md:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    --shadow-lg:
+        0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.container {
+    width: min(
+        var(--container-width),
+        calc(100% - 80px)
+    );
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--dark);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--text-light);
+}
+
+.section-title {
+    font-family: var(--heading-font);
+
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.section-subtitle {
+    max-width: 620px;
+
+    margin-top: 15px;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.section-label::before {
+    content: "";
+
+    width: 28px;
+    height: 2px;
+
+    background: var(--primary);
+}
+
+
+/* =========================================================
+   COMMON SECTIONS
+========================================================= */
+
+section {
+    width: 100%;
+
+    padding: 110px 0;
+}
+
+.section-header {
+    margin-bottom: 55px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 48px;
+
+    padding: 0 24px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+
+    color: var(--dark);
+
+    border: 1px solid var(--border);
+}
+
+.btn-outline:hover {
+    background: var(--background-soft);
+
+    border-color: var(--dark);
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d2dbd2;
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}

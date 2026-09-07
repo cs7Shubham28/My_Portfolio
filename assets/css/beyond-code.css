@@ -1,0 +1,255 @@
+/* =========================================================
+   BEYOND CODE SECTION
+========================================================= */
+
+.beyond-code-section {
+    width: 100%;
+    padding: 100px 0;
+    background: #f7f9f8;
+}
+
+/* Container */
+.beyond-code-section .container {
+    width: 100%;
+    max-width: 1135px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.beyond-code-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.beyond-code-section .section-heading h2 {
+    margin: 0 0 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    color: #171918;
+}
+
+.beyond-code-section .section-heading p {
+    margin: 0;
+    max-width: 650px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #626c67;
+}
+
+/* =========================================================
+   BEYOND CODE GRID
+========================================================= */
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+/* =========================================================
+   BEYOND CODE CARD
+========================================================= */
+
+.beyond-card {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 175px;
+
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid #e0e6e2;
+    border-radius: 15px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.beyond-card:hover {
+    transform: translateY(-4px);
+    border-color: #cfdad2;
+    box-shadow: 0 12px 28px rgba(35, 60, 43, 0.08);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.beyond-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 22px;
+
+    border-radius: 12px;
+
+    background: #e9f5ed;
+    color: #2e7d32;
+
+    font-size: 20px;
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.beyond-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.beyond-content h3 {
+    margin: 0 0 9px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.35;
+
+    color: #18201b;
+}
+
+.beyond-content p {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: #607068;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .beyond-code-section {
+        padding: 80px 0;
+    }
+
+    .beyond-code-section .container {
+        width: calc(100% - 60px);
+    }
+
+    .beyond-code-section .section-heading h2 {
+        font-size: 45px;
+    }
+
+    .beyond-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .beyond-card {
+        padding: 25px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .beyond-code-section {
+        padding: 70px 0;
+    }
+
+    .beyond-code-section .container {
+        width: calc(100% - 40px);
+    }
+
+    .beyond-code-section .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .beyond-code-section .section-heading h2 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .beyond-code-section .section-heading p {
+        font-size: 14px;
+    }
+
+    /* One card per row on mobile */
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .beyond-card {
+        min-height: 160px;
+        padding: 24px;
+    }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .beyond-code-section {
+        padding: 60px 0;
+    }
+
+    .beyond-code-section .container {
+        width: calc(100% - 32px);
+    }
+
+    .beyond-code-section .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .beyond-code-section .section-heading p {
+        font-size: 13px;
+    }
+
+    .beyond-card {
+        padding: 20px;
+    }
+
+    .beyond-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        margin-right: 15px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+
+    .beyond-content h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .beyond-content p {
+        font-size: 12.5px;
+        line-height: 1.65;
+    }
+
+}

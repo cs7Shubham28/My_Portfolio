@@ -1,0 +1,147 @@
+
+/* =========================================================
+   SITE FOOTER
+========================================================= */
+
+.site-footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.site-footer .container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.site-footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #1d1d1d;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.site-footer .footer-bottom p {
+    margin: 0;
+
+    font-family: var(--body-font);
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: #777777;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.site-footer .footer-bottom p span {
+    color: #aaaaaa;
+
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.site-footer .footer-bottom p span:hover {
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .site-footer {
+        padding: 28px 0;
+    }
+
+    .site-footer .container {
+        width: calc(100% - 60px);
+    }
+
+    .site-footer .footer-bottom p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .site-footer {
+        padding: 26px 0;
+    }
+
+    .site-footer .container {
+        width: calc(100% - 40px);
+    }
+
+    .site-footer .footer-bottom {
+        padding-top: 20px;
+    }
+
+    .site-footer .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .site-footer {
+        padding: 24px 0;
+    }
+
+    .site-footer .container {
+        width: calc(100% - 32px);
+    }
+
+    .site-footer .footer-bottom {
+        padding-top: 18px;
+    }
+
+    .site-footer .footer-bottom p {
+        font-size: 11px;
+    }
+
+}
+
